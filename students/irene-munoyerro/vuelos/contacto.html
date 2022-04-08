@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <form action="/my-handling-form-page" method="post">
+
+        <label for="NAME"><b>Nombre</b></label><br>
+        <input maxlength="30" placeholder="Escribe tu nombre" id="NAME" type="text" name="user_name"><br><br>
+
+        <label for="PHONE"><b>Número</b></label><br>
+        <input maxlength="9" placeholder="Escribe tu número" id="PHONE" type="tel" name="phone" pattern="[0-9]{9}" required><br><br>
+
+        <label for="EMAIL"><b>Email</b></label><br>
+        <input id="EMAIL" placeholder="Escribe tu email" type="email" name="user_email" required><br><br>
+
+        <label for="img"><b>Sube una imagen</b></label><br>
+        <input type="file" id="img" name="img" accept="image/*"><br><br>
+
+        <label for="selection"><b>Vuelos</b></label><br>
+        <select size="3" name="selection">
+            <option value="ida">Ida</option>
+            <option value="retorno">Ida y vuelta</option>
+            <option value="otros">Otro</option>
+            <option value="otros">Otro</option>
+        </select><br><br>
+
+        <p><b>¿Lugar de destino?</b></p>
+        <input type="checkbox" name="destination1" value="Grecia">
+        <label for="destionation1">Grecia</label>
+        <input type="checkbox" name="destination2" value="Italia">
+        <label for="destionation2">Italia</label>
+        <input type="checkbox" name="destination3" value="Francia">
+        <label for="destination3">Francia</label><br><br>
+
+        <label for="comment"><b>Deja tu mensaje</b></label><br>
+        <textarea maxlength="400" name="comment"></textarea><br><br>
+
+        <input type="checkbox" name="avisolegal" value="avisolegal">
+        <label for="avisolegal">He leído y acepto <a href="/avisolegal.txt">el aviso legal y la política de privacida.</a></label>
+
+    </form>
+</body>
+</html>
